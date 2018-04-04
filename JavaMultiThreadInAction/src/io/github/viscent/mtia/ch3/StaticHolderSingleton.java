@@ -22,10 +22,10 @@ public class StaticHolderSingleton {
 
   static class InstanceHolder {
     // 保存外部类的唯一实例
+    final static StaticHolderSingleton INSTANCE = new StaticHolderSingleton();
     static {
       Debug.info("InstanceHolder inited.");
     }
-    final static StaticHolderSingleton INSTANCE = new StaticHolderSingleton();
   }
 
   public static StaticHolderSingleton getInstance() {

@@ -20,6 +20,8 @@ public class EnumBasedSingletonExample {
       @Override
       public void run() {
         Debug.info(Singleton.class.getName());
+        System.out.println("before....");
+        Singleton.INSTANCE.someService();
         Singleton.INSTANCE.someService();
       };
     };
